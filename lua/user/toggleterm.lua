@@ -63,6 +63,12 @@ function _HTOP_TOGGLE()
 	htop:toggle()
 end
 
+local elixir = Terminal:new({ cmd = "iex", hidden = true })
+
+function _ELIXIR_TOGGLE()
+	elixir:toggle()
+end
+
 local python = Terminal:new({ cmd = "python", hidden = true })
 
 function _PYTHON_TOGGLE()
